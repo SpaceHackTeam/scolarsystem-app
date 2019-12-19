@@ -19,40 +19,16 @@
 }
 
 @keyframes c-letter {
-  0% {
-    color: black;
-  }
-  1% {
-    color: gold;
-  }
-  4% {
-    color: gold;
-  }
-  5% {
-    color: black;
-  }
-  14% {
-    color: black;
-  }
-  15% {
-    color: gold;
-  }
-  49% {
-    font: gold;
-  }
-  50% {
-    color: black;
-  }
-  79% {
-    color: black;
-  }
-  80% {
-    color: gold;
-  }
-  98% {
-    color: gold;
-  }
-  99% {
-    color: black;
-  }
+  0% {color: black;}
+  1% {color: gold;}
+  4% {color: gold;}
+  5% {color: black;}
+  14% {color: black;}
+  15% {color: gold;}
+  49% {font: gold;}
+  50% {color: black;}
+  79% {color: black;}
+  80% {color: gold;}
+  98% {color: gold;}
+  99% {color: black;}
 }
