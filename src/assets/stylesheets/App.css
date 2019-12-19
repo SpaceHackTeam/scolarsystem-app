@@ -1,0 +1,34 @@
+.App {
+  text-align: center;
+  background-color: #000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.Title {
+  font-size: 3vh;
+}
+
+.Title-c {
+  color: gold;
+  animation: c-letter 2s infinite;
+}
+
+@keyframes c-letter {
+  0% {color: black;}
+  1% {color: gold;}
+  4% {color: gold;}
+  5% {color: black;}
+  14% {color: black;}
+  15% {color: gold;}
+  49% {color: gold;}
+  50% {color: black;}
+  79% {color: black;}
+  80% {color: gold;}
+  98% {color: gold;}
+  99% {color: black;}
+}
