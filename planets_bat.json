@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "name": "Mercure",
+        "distance_from_sun": 67478931,
+        "surface": 74797000,
+        "qtyMoon": 0,
+        "description": "Mercure - la plus petite planète de notre système solaire et la plus proche du Soleil - n'est que légèrement plus grande que la Lune de la Terre. Mercure est la planète la plus rapide, tournant autour du Soleil tous les 88 jours terrestres.",
+        "rotation_period": 88,
+        "distance_light": 3.751502,
+        "type": "Terreste",
+        "mean_temperature": 167
+    },
+    {
+        "id": 2,
+        "name": "Venus",
+        "distance_from_sun": 108818856,
+        "surface": 460234317,
+        "qtyMoon": 0,
+        "description": "Vénus tourne lentement dans la direction opposée à la plupart des planètes. Une atmosphère épaisse emprisonne la chaleur dans un effet de serre incontrôlable, ce qui en fait la planète la plus chaude de notre système solaire.",
+        "rotation_period": 225,
+        "distance_light": 6.049675,
+        "type": "Terreste",
+        "mean_temperature": 464
+    },
+    {
+        "id": 3,
+        "name": "Terre",
+        "distance_from_sun": 147185645,
+        "surface": 510064472,
+        "qtyMoon": 1,
+        "description": "La Terre - notre planète natale - est le seul endroit que nous connaissons à ce jour qui soit habité par des êtres vivants. C'est aussi la seule planète de notre système solaire avec de l'eau liquide à la surface.",
+        "rotation_period": 365,
+        "distance_light": 8.182640,
+        "type": "Terreste",
+        "mean_temperature": 15
+    },
+    {
+        "id": 4,
+        "name": "Mars",
+        "distance_from_sun": 239810028,
+        "surface": 144371391,
+        "qtyMoon": 2,
+        "description": "Mars est un monde désertique, poussiéreux et froid avec une atmosphère très mince. Il y a de fortes preuves que Mars était - il y a des milliards d'années - plus humide et plus chaud, avec une atmosphère plus épaisse.",
+        "rotation_period": 687,
+        "distance_light": 13.331995,
+        "type": "Terreste",
+        "mean_temperature": -65
+    },
+    {
+        "id": 5,
+        "name": "Jupiter",
+        "distance_from_sun": 782707798,
+        "surface": 61418738571,
+        "qtyMoon": 53,
+        "description": "La masse de jupiter est plus de deux fois supérieure à celle des planètes du système solaire rénuis. Le grand point rouge de la planète géante est une tempête vieille de plusieurs siècles plus grande que la Terre.",
+        "rotation_period": 4333,
+        "distance_light": 43.513865,
+        "type": "Géante gazeuse",
+        "mean_temperature": -110
+    },
+    {
+        "id": 6,
+        "name": "Saturne",
+        "distance_from_sun": 1501298797,
+        "surface": 42612133285,
+        "qtyMoon": 53,
+        "description": "Ornée d'un système éblouissant et complexe d'anneaux glacés, Saturne est unique dans notre système solaire. Les autres planètes géantes ont des anneaux, mais aucun n'est aussi spectaculaire que celui de Saturne.",
+        "rotation_period": 10759,
+        "distance_light": 83.463229,
+        "type": "Géante gazeuse",
+        "mean_temperature": -140
+    },
+    {
+        "id": 7,
+        "name": "Uranus",
+        "distance_from_sun": 2877221848,
+        "surface": 8083079690,
+        "qtyMoon": 27,
+        "description": "Uranus - la septième planète du Soleil - tourne à un angle de près de 90 degrés par rapport au plan de son orbite. Cette inclinaison unique fait Uranus semble tourner sur le côté.",
+        "rotation_period": 30687,
+        "distance_light": 164.838890,
+        "type": "Géante de glace",
+        "mean_temperature": -195
+    },
+    {
+        "id": 8,
+        "name": "Neptune",
+        "distance_from_sun": 4477924897,
+        "surface": 7618272763,
+        "qtyMoon": 14,
+        "description": "Neptune, la huitième planète principale la plus éloignée en orbite autour de notre Soleil, est sombre, froide et fouettée par des vents supersoniques. C'était la première planète localisée par des calculs mathématiques, plutôt que par un télescope.",
+        "rotation_period": 60190,
+        "distance_light": 248.945828,
+        "type": "Géante de glace",
+        "mean_temperature": -200
+    }
+]
