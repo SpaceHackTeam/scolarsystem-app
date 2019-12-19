@@ -90,7 +90,7 @@
 }
 .mercure {
     background-color: cyan;
-    background-image: url(../img/Terre.png)
+    background-image: url(../img/Mercure.png)
 }
 
 /* VENUS */
@@ -210,8 +210,8 @@
 }
 
 .saturne {
-    background-color: pink;
-    background-image: url()
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(../img/Saturne.png);
 }
 
 /* URANUS */
