@@ -1,0 +1,28 @@
+.container-fusee {
+	overflow: hidden;
+	height: 100vh;
+	width: 100vw;
+}
+
+#fuseeKiDecol {
+	height: 300px;
+	animation-duration: 36s;
+	animation-name: slidein;
+	transform: translateY(-300px);
+}
+
+@keyframes slidein {
+	from {
+		opacity: 1;
+		transform: translateY(3000px);
+	}
+	50% {
+		opacity: 1;
+		transform: translateY(500px);
+	}
+
+	to {
+		opacity: 0;
+		transform: translateY(-300px);
+	}
+}
