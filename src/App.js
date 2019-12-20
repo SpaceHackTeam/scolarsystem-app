@@ -7,7 +7,7 @@ function App() {
 	return (
 		<div className="App">
 			{/* <h1 className="Title">The S<span className="Title-c">c</span>olar System</h1> */}
-			{/* <ScolarSystem /> */}
+			<ScolarSystem />
 			<Intro />
 		</div>
 	);

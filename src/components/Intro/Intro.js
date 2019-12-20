@@ -8,7 +8,11 @@ const decollageFusee = () => {
 	document.getElementById('fuseeKiDecol').style.animationPlayState = 'running';
 	document.getElementById('button-container').style.opacity = 0;
 	const sound = new Audio(require('../../assets/sound/fusee.mp3'));
-	return sound.play();
+	sound.play();
+	setTimeout(function() {
+		document.getElementById('universe').style.opacity = 1;
+		document.getElementById('universe').style.zIndex = 100;
+	}, 37000);
 };
 
 const Intro = () => {
@@ -24,6 +28,7 @@ const Intro = () => {
 					<span class="launch">LAUNCH</span>
 				</button>
 				<div class="redbutton-shadow" />
+				<div id="intro-bg" />
 			</div>
 
 			<div id="intro-smoke" />
