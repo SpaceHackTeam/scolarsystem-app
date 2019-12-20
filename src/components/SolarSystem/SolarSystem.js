@@ -1,10 +1,20 @@
 import React from 'react';
 import '../../assets/stylesheets/SolarSystem.css';
 
+let numberClicked = 0;
+
+function SunButton() {
+	numberClicked+=1;
+	if (numberClicked === 5) {
+		document.getElementById('universe').style.opacity = 0;
+		document.getElementById('sun').style.fontSize='15em';
+	}
+}
+
 function SolarSystem() {
 	return (
 		<div id="universe">
-			<div id="sun" />
+			<div onClick={SunButton} id="sun" />
 
 			<div id="mercure" className="orbit">
 				<div className="planet mercure" />
