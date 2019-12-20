@@ -4,20 +4,20 @@
   text-align: center;
   border: 1px solid;
   border-radius: 0 0 1rem 1rem;
-  box-shadow: 5px 5px 20px -5px rgba(0,0,0,0.75);
- }
+  box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.75);
+}
 
 .planet-image {
   height: 10rem;
   width: 100%;
-  object-fit: cover
+  object-fit: cover;
 }
 
 .planet-name {
   margin-top: 1rem;
   font-size: 2rem;
   font-weight: bold;
-  color: white
+  color: white;
 }
 
 .planet-description {
@@ -29,24 +29,30 @@
 }
 
 .planet-test {
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   border: 2px solid yellow;
   border-radius: 1rem;
   margin: 1rem;
   padding: 1rem 0;
 }
+
 .planet-question {
   padding: rem 0;
   font-size: 1.2rem;
-  font-weight: bold
+  font-weight: bold;
+}
+
+.qcm-answers {
+  display: flex;
 }
 
 .planet-qcm {
-  margin-bottom: 0.7rem
+  margin-bottom: 0.7rem;
+  flex: 1 0 auto;
 }
 
 @media screen and (min-width: 600px) {
   .planet-popup {
-    width: 500px
+    width: 500px;
   }
 }
