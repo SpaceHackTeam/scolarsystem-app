@@ -8,8 +8,10 @@ function SolarSystem() {
     document.getElementById("universe").style.zIndex = 10;
     // document.getElementById("intro-bg").style.opacity = 0;
     // document.getElementById("sun").style.fontSize = "15em";
+  } else if (easterEgg > 5) {
+    setEasterEgg(null);
   }
-  console.log(easterEgg);
+
   return (
     <div id="universe">
       <div onClick={() => setEasterEgg(easterEgg + 1)} id="sun" />
