@@ -1,0 +1,52 @@
+.planet-popup {
+  margin: 3rem;
+  background-color: black;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 0 0 1rem 1rem;
+  box-shadow: 5px 5px 20px -5px rgba(0,0,0,0.75);
+ }
+
+.planet-image {
+  height: 10rem;
+  width: 100%;
+  object-fit: cover
+}
+
+.planet-name {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white
+}
+
+.planet-description {
+  padding: 0 1rem;
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: white;
+}
+
+.planet-test {
+  background-color: rgba(255,255,255,0.8);
+  border: 2px solid yellow;
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 1rem 0;
+}
+.planet-question {
+  padding: rem 0;
+  font-size: 1.2rem;
+  font-weight: bold
+}
+
+.planet-qcm {
+  margin-bottom: 0.7rem
+}
+
+@media screen and (min-width: 600px) {
+  .planet-popup {
+    width: 500px
+  }
+}
