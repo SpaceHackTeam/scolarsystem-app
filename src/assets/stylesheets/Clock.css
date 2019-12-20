@@ -1,7 +1,7 @@
 .flipClock {
   display: flex;
   justify-content: space-around;
-  width: 500px;
+  width: 400px;
   position: absolute;
   z-index: 100;
 }

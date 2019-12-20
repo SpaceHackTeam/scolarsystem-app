@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../../assets/stylesheets/Teslablackhole.css";
 import gsap from "gsap";
 
@@ -7,6 +7,11 @@ import imgTwo from "../../assets/img/universe.gif";
 import imgThree from "../../assets/img/birth.gif";
 
 const Teslablackhole = () => {
+  const [value, setValue] = useState("nope");
+  // const changeName = () => {
+  //   setValue("yup");
+  // };
+
   const tl = useRef(gsap.timeline({ paused: true }));
   const blackhole = useRef(null);
   const intro = useRef(null);
@@ -56,11 +61,19 @@ const Teslablackhole = () => {
       .set(birth.current, {
         opacity: 1
       });
-  });
-
+  }, [value]);
+  console.log(value);
   return (
     <div>
-      <div id="tesla">
+      <div id={value}>
+        <button
+          className={value}
+          type="button"
+          onClick={() => setValue("close")}
+        >
+          X
+        </button>
+
         <div className="blackhole" ref={blackhole} />
         <img alt="imgOne" src={imgOne} ref={intro} />
         <img alt="imgThree" src={imgTwo} ref={bigBang} />

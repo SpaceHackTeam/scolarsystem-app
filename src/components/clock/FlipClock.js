@@ -26,9 +26,9 @@ export default class FlipClock extends React.Component {
 
   updateTime() {
     // get new date
-    const time = new Date();
+    const time = new Date("December 17, 1995 00:00:00");
     // set time units
-    const hours = time.getMinutes() + 10;
+    const hours = time.getMinutes();
     const minutes = time.getSeconds();
     const seconds = time.getMilliseconds();
     // on hour chanage, update hours and shuffle state

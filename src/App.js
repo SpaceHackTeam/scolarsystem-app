@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       {/* <h1 className="Title">The S<span className="Title-c">c</span>olar System</h1> */}
       {/* <ScolarSystem /> */}
-      <FlipClock />
+      {/* <FlipClock /> */}
       <Teslablackhole />
     </div>
   );
