@@ -6,10 +6,13 @@
 
 #fuseeKiDecol {
 	height: 300px;
-	animation-duration: 36s;
-	animation-name: slideIn;
-	animation-play-state: paused;
 	transform: translateY(-300px);
+	animation: slidein 36s;
+	animation-play-state: paused;
+}
+
+.commeTuVeux {
+	animation: slidein 36s;
 }
 
 @keyframes slidein {
@@ -38,11 +41,17 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: rgb(115,0,0);
-	background: radial-gradient(circle, rgba(115,0,0,1) 0%, rgba(255,0,0,1) 70%, rgba(207,22,22,1) 84%, rgba(255,104,104,1) 100%);
-  }
-  
-  .redbutton-shadow {
+	background: rgb(115, 0, 0);
+	background: radial-gradient(
+		circle,
+		rgba(115, 0, 0, 1) 0%,
+		rgba(255, 0, 0, 1) 70%,
+		rgba(207, 22, 22, 1) 84%,
+		rgba(255, 104, 104, 1) 100%
+	);
+}
+
+.redbutton-shadow {
 	z-index: 1;
 	position: absolute;
 	height: 20vh;
@@ -50,38 +59,37 @@
 	transform: translateY(1vh);
 	border-radius: 50%;
 	border: 1px solid rgb(50, 50, 50);
-  
+
 	background-color: darkred;
-	
-  }
-  
-  .redbutton:active {
+}
+
+.redbutton:active {
 	transform: translateY(1vh);
 	transition: transform .2s;
-  
-  }
-  
-  .redbutton:focus {
+}
+
+.redbutton:focus {
 	outline: 0;
-  }
-  
-  .launch {
+}
+
+.launch {
 	color: white;
 	font-weight: bold;
 	font-size: 4vh;
 	transform: perspective(280px) rotateX(10deg);
 	-webkit-text-stroke: 1px darkred;
-  }
+}
 
-  .button-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  background-color: rgba(0, 0, 0, 0);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.button-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(0, 0, 0, 0);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	transition: opacity 2s;
 }
