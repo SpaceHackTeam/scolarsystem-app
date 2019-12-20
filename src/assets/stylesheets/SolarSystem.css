@@ -1,291 +1,284 @@
-#sun:hover {
-  cursor: pointer !important;
-}
-
 .orbit {
-  pointer-events: none;
+	pointer-events: none;
 }
 
 .planet {
-  pointer-events: stroke;
-  filter: grayscale(100%);
-  transition: .5s;
+	cursor: url('../img/cursor.png'), auto;
+	pointer-events: stroke;
+	filter: grayscale(100%);
+	transition: .5s;
 }
 
 .planet:hover {
-
-  cursor:pointer;
-  filter: grayscale(0%);
-  transition: .5s;
+	filter: grayscale(0%);
+	transition: .5s;
 }
 
 #universe {
-    position: absolute;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    background-position: center 40%;
-    background-repeat: no-repeat;
-    background-size: cover; 
-  }
-  
-  #sun, .planet {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: .5em;
-    height: .5em;
-    margin-top: -0.25em;
-    margin-left: -0.25em;
-    border-radius: 50%;
-  }
-  
-  #sun {
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .planet {
-    background-color: #202020;
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-  
-  .orbit {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, .1);
-    animation-name: orbit;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear; 
-  }
-  
-  /* Animations */
-  @keyframes orbit {
-    0%   { transform: rotateZ(0deg); }
-    100% { transform: rotateZ(-360deg); } 
-  }
-  
+	opacity: 0;
+	transition: opacity 3s;
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	background-position: center 40%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#sun,
+.planet {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: .5em;
+	height: .5em;
+	margin-top: -0.25em;
+	margin-left: -0.25em;
+	border-radius: 50%;
+}
+
+#sun {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.planet {
+	background-color: #202020;
+	background-repeat: no-repeat;
+	background-size: cover;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.orbit {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-radius: 50%;
+	border: 1px solid rgba(255, 255, 255, .1);
+	animation-name: orbit;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+/* Animations */
+@keyframes orbit {
+	0% {
+		transform: rotateZ(0deg);
+	}
+	100% {
+		transform: rotateZ(-360deg);
+	}
+}
 
 /* MERCURE */
 #mercure .planet {
-    left: 50%;
-    top: -0%; 
-} 
-#mercure.orbit {
-    width: 5em;
-    height: 5em;
-    margin-top: -2.5em;
-    margin-left: -2.5em; 
+	left: 50%;
+	top: -0%;
 }
 #mercure.orbit {
-    animation-duration: 8.8s;
+	width: 5em;
+	height: 5em;
+	margin-top: -2.5em;
+	margin-left: -2.5em;
+}
+#mercure.orbit {
+	animation-duration: 8.8s;
 }
 #mercure {
-    font-size: 1em;
+	font-size: 1em;
 }
 .mercure {
-    background-color: cyan;
-    background-image: url(../img/Mercure.png)
+	background-color: cyan;
+	background-image: url(../img/Mercure.png);
 }
 
 /* VENUS */
 #venus .planet {
-    left: 50%;
-    top: -0%; 
-  } 
-  #venus.orbit {
-    width: 3.5em;
-    height: 3.5em;
-    margin-top: -1.75em;
-    margin-left: -1.75em; 
-  }
-  #venus.orbit {
-    animation-duration: 22.4s;
-  }
-  #venus {
-    font-size: 2em;
+	left: 50%;
+	top: -0%;
+}
+#venus.orbit {
+	width: 3.5em;
+	height: 3.5em;
+	margin-top: -1.75em;
+	margin-left: -1.75em;
+}
+#venus.orbit {
+	animation-duration: 22.4s;
+}
+#venus {
+	font-size: 2em;
 }
 .venus {
-    background-color: green;
-    background-image: url(../img/Venus.png)
+	background-color: green;
+	background-image: url(../img/Venus.png);
 }
 
 /* TERRE */
 
 #terre .planet {
-    left: 50%;
-    top: -0%; 
-  } 
-  #terre.orbit {
-    width: 4.75em;
-    height: 4.75em;
-    margin-top: -2.375em;
-    margin-left: -2.375em; 
-  }
-  #terre.orbit {
-    animation-duration: 36.5s;
-  }
+	left: 50%;
+	top: -0%;
+}
+#terre.orbit {
+	width: 4.75em;
+	height: 4.75em;
+	margin-top: -2.375em;
+	margin-left: -2.375em;
+}
+#terre.orbit {
+	animation-duration: 36.5s;
+}
 #terre {
-    font-size: 2em;
+	font-size: 2em;
 }
 .terre {
-    background-color: blue;
-    background-image: url(../img/Terre.png)
+	background-color: blue;
+	background-image: url(../img/Terre.png);
 }
-
 
 /* MARS */
 #mars .planet {
-    left: 50%;
-    top: -0%; 
-  } 
-  #mars.orbit {
-    width: 11em;
-    height: 11em;
-    margin-top: -5.5em;
-    margin-left: -5.5em; 
-  }
-  #mars.orbit {
-    animation-duration: 68.7s;
-  }
+	left: 50%;
+	top: -0%;
+}
+#mars.orbit {
+	width: 11em;
+	height: 11em;
+	margin-top: -5.5em;
+	margin-left: -5.5em;
+}
+#mars.orbit {
+	animation-duration: 68.7s;
+}
 #mars {
-    font-size: 1.2em;
+	font-size: 1.2em;
 }
 .mars {
-    background-color: red;
-    background-image: url(../img/Mars.png)
+	background-color: red;
+	background-image: url(../img/Mars.png);
 }
-
 
 /* JUPITER */
 #jupiter .planet {
-    left: 50%;
-    top: -0%; 
-  } 
-  #jupiter.orbit {
-    width: 5.5em;
-    height: 5.5em;
-    margin-top: -2.75em;
-    margin-left: -2.75em; 
-  }
-  #jupiter.orbit {
-    animation-duration: 433.3s;
-  }
+	left: 50%;
+	top: -0%;
+}
+#jupiter.orbit {
+	width: 5.5em;
+	height: 5.5em;
+	margin-top: -2.75em;
+	margin-left: -2.75em;
+}
+#jupiter.orbit {
+	animation-duration: 433.3s;
+}
 #jupiter {
-    font-size: 3.1em;
+	font-size: 3.1em;
 }
 
 .jupiter {
-
-    background-color: lightblue;
-    background-image: url(../img/Jupiter.png);
+	background-color: lightblue;
+	background-image: url(../img/Jupiter.png);
 }
-
-.jupiter:hover {
-  cursor: pointer;
-}
-
 
 /* SATURNE */
 #saturne .planet {
-    left: 50%;
-    top: -0%; 
-  } 
-  #saturne.orbit {
-    width: 7.5em;
-    height: 7.5em;
-    margin-top: -3.75em;
-    margin-left: -3.75em; 
-  }
-  #saturne.orbit {
-    animation-duration: 1075.9s;
-  }
+	left: 50%;
+	top: -0%;
+}
+#saturne.orbit {
+	width: 7.5em;
+	height: 7.5em;
+	margin-top: -3.75em;
+	margin-left: -3.75em;
+}
+#saturne.orbit {
+	animation-duration: 1075.9s;
+}
 #saturne {
-    font-size: 3em;
+	font-size: 3em;
 }
 
 .saturne {
-    background-color: rgba(0, 0, 0, 0);
-    background-image: url(../img/Saturne.png);
+	background-color: rgba(0, 0, 0, 0);
+	background-image: url(../img/Saturne.png);
 }
 
 /* URANUS */
 #uranus .planet {
-    left: 50%;
-    top: 0%; 
-  } 
+	left: 50%;
+	top: 0%;
+}
 #uranus.orbit {
-    width: 12em;
-    height: 12em;
-    margin-top: -6em;
-    margin-left: -6em; 
-  }
+	width: 12em;
+	height: 12em;
+	margin-top: -6em;
+	margin-left: -6em;
+}
 #uranus.orbit {
-    animation-duration: 3068.5s;
-  }
+	animation-duration: 3068.5s;
+}
 #uranus {
-    font-size: 2.5em;
+	font-size: 2.5em;
 }
 .uranus {
-    background-color: purple;
-    background-image: url(../img/Uranus.png)
+	background-color: purple;
+	background-image: url(../img/Uranus.png);
 }
-
 
 /* NEPTUNE */
 #neptune .planet {
-    left: 50%;
-    top: 0%; 
-  } 
-  #neptune.orbit {
-    width: 14em;
-    height: 14em;
-    margin-top: -7em;
-    margin-left: -7em; 
-  }
-  #neptune.orbit {
-    animation-duration: 6018.9s;
-  }
+	left: 50%;
+	top: 0%;
+}
+#neptune.orbit {
+	width: 14em;
+	height: 14em;
+	margin-top: -7em;
+	margin-left: -7em;
+}
+#neptune.orbit {
+	animation-duration: 6018.9s;
+}
 #neptune {
-    font-size: 2.5em;
+	font-size: 2.5em;
 }
 .neptune {
-    background-color: darkslateblue;
-    background-image: url(../img/Neptune.png)
+	background-color: darkslateblue;
+	background-image: url(../img/Neptune.png);
 }
 
 /* PLUTON */
 #pluton .planet {
-    left: 50%;
-    top: 0%; 
-  } 
-  #pluton.orbit {
-    width: 200em;
-    height: 200em;
-    margin-top: -100em;
-    margin-left: -100em; 
-  }
-  #pluton.orbit {
-    animation-duration: 9046.5s;
-  }
+	left: 50%;
+	top: 0%;
+}
+#pluton.orbit {
+	width: 200em;
+	height: 200em;
+	margin-top: -100em;
+	margin-left: -100em;
+}
+#pluton.orbit {
+	animation-duration: 9046.5s;
+}
 #pluton {
-    font-size: .2em;
+	font-size: .2em;
 }
 .pluton {
-    background-color: black;
-    background-image: url(../img/Pluton.png)
+	background-color: black;
+	background-image: url(../img/Pluton.png);
 }
 #sun {
-font-size: 6em;
+	font-size: 6em;
 }
 #sun {
-  background-image: url(../img/Soleil.png)
+	background-image: url(../img/Soleil.png);
 }
 #universe {
-background-color: black;
+	background-color: black;
 }
+
