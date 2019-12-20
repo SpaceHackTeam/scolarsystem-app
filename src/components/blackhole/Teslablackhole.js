@@ -7,7 +7,7 @@ import imgTwo from "../../assets/img/universe.gif";
 import imgThree from "../../assets/img/birth.gif";
 
 const Teslablackhole = () => {
-  const [value, setValue] = useState("nope");
+  const [value, setValue] = useState("backHoleAll");
   // const changeName = () => {
   //   setValue("yup");
   // };
@@ -62,12 +62,11 @@ const Teslablackhole = () => {
         opacity: 1
       });
   }, [value]);
-  console.log(value);
   return (
     <div>
       <div id={value}>
         <button
-          className={value}
+          className="nope"
           type="button"
           onClick={() => setValue("close")}
         >
@@ -75,10 +74,10 @@ const Teslablackhole = () => {
         </button>
 
         <div className="blackhole" ref={blackhole} />
-        <img alt="imgOne" src={imgOne} ref={intro} />
-        <img alt="imgThree" src={imgTwo} ref={bigBang} />
+        <img className="img" alt="imgOne" src={imgOne} ref={intro} />
+        <img className="img" alt="imgThree" src={imgTwo} ref={bigBang} />
         <div className="emptyness" ref={emptyness} />
-        <img alt="imgThree" src={imgThree} ref={birth} />
+        <img className="img" alt="imgThree" src={imgThree} ref={birth} />
       </div>
     </div>
   );
